@@ -1,0 +1,173 @@
+/* General Page Styling (Default Dark Mode) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #15151e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Intro Slides & Main Content Containers */
+#intro-slide-1,
+#intro-slide-2,
+#intro-slide-3,
+#intro-slide-4 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 20px;
+    background-color: #1f1f27;
+    border-top: 5px solid #e10600;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+#main-content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #1f1f27;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation Bar */
+#main-content > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+/* Headings */
+h1 {
+    color: #e10600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 5px solid #e10600;
+    padding-left: 15px;
+}
+
+h2, h3 {
+    color: #f3f3f3;
+    margin-top: 30px;
+    border-bottom: 2px solid #38383f;
+    padding-bottom: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #e10600;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin: 5px 3px;
+}
+
+button:hover {
+    background-color: #ff1e17;
+    transform: translateY(-2px);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Lists & Driver Box */
+ol, #driver-box {
+    background-color: #282832;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #e10600;
+}
+
+ol {
+    padding-left: 40px;
+}
+
+ol li {
+    margin-bottom: 12px;
+}
+
+/* Links, Divider & Footer */
+a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #38383f;
+    margin: 25px 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #b0b0b8;
+    margin-top: 30px;
+}
+
+footer h1 {
+    font-size: 18px;
+    border: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* =========================================
+   LIGHT MODE STYLES (Triggered by JS)
+   ========================================= */
+body.light-mode {
+    background-color: #f4f4f7;
+    color: #15151e;
+}
+
+body.light-mode #intro-slide-1,
+body.light-mode #intro-slide-2,
+body.light-mode #intro-slide-3,
+body.light-mode #intro-slide-4,
+body.light-mode #main-content {
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode h2,
+body.light-mode h3 {
+    color: #15151e;
+    border-bottom-color: #dcdce0;
+}
+
+body.light-mode ol,
+body.light-mode #driver-box {
+    background-color: #f0f0f5;
+    color: #15151e;
+}
+
+body.light-mode hr {
+    background: #dcdce0;
+}
+
+body.light-mode footer,
+body.light-mode footer h1 {
+    color: #4a4a55;
+}
