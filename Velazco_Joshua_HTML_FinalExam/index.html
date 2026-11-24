@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 - The Pinnacle of Motorsport</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body id="page-body" class="light-mode">
+    
+    <div id="intro-slide-1" style="text-align: center; margin-top: 80px;">
+        <img src="F1 logo.png" alt="Formula 1 Logo" width="300">
+        <h2>Welcome to the World of Formula 1</h2>
+        <button type="button" onclick="goToQuestion()">Continue</button>
+    </div>
+
+   
+    <div id="intro-slide-2" style="display: none; text-align: center; margin-top: 80px;">
+        <h2>Are you interested in watching Formula 1?</h2>
+        <button type="button" onclick="enterMainSite()">Yes</button>
+        <button type="button" onclick="goToConfirm()">No</button>
+    </div>
+
+   
+    <div id="intro-slide-3" style="display: none; text-align: center; margin-top: 80px;">
+        <h2>Are you sure?</h2>
+        <button type="button" onclick="exitSite()">Yes</button>
+        <button type="button" onclick="goToQuestion()">No</button>
+    </div>
+
+    
+    <div id="intro-slide-4" style="display: none; text-align: center; margin-top: 100px;">
+        <h1>You have exited the site.</h1>
+        <p>Thank you for visiting Formula 1: The Pinnacle of Motorsport!</p>
+        <button type="button" onclick="backToStart()">Back to Website</button>
+    </div>
+
+   
+    <div id="main-content" style="display: none;">
+
+        
+        <div>
+            <a href="#about"><button type="button">About Formula 1</button></a>
+            <a href="#rules"><button type="button">Basic Rules</button></a>
+            <a href="#drivers"><button type="button">Star Drivers</button></a>
+            <button type="button" onclick="toggleTheme()">Switch Dark/Light Mode</button>
+            <button type="button" onclick="exitFromMain()">Exit</button>
+        </div>
+
+        <hr>
+
+        
+        <h1>Formula 1: The Pinnacle of Motorsport</h1>
+
+        
+        <img src="F1 Cars Racing.jpg" alt="Formula 1 race car speeding around a circuit" width="600">
+
+        
+        <p>
+            <button type="button" onclick="addCheer()">🏎️ Rev Your Engine / Cheer!</button>
+            <strong><span id="cheer-count">0</span></strong> F1 fans cheering!
+        </p>
+
+        
+        <h2 id="about">Why Formula 1 is Loved Worldwide</h2>
+
+       
+        <p>
+            Formula 1 (F1) is the highest class of international open-wheel, single-seater motorsport, 
+            featuring 22 drivers across 11 teams competing in 24 Grand Prix races around the world each season. 
+            Sanctioned by the FIA since 1950 and run commercially by Formula One Group, it blends extreme speeds (up to around 370 km/h) with cutting-edge engineering and race strategy.
+        </p>
+
+        <p>
+            In the Philippines, Formula 1 has grown into a massive weekend tradition. 
+            From local sim-racing communities to live watch parties during Grand Prix weekends, 
+            thousands of Filipino fans gather to support their favorite constructors and drivers.
+        </p>
+
+        
+        <h2 id="rules">Top 4 Essential Rules of Formula 1</h2>
+
+        
+        <ol>
+            <li><strong>Points System:</strong> Points are awarded to the top 10 finishers in each Grand Prix, with 25 points going to the race winner.</li>
+            <li><strong>Mandatory Pit Stops:</strong> Drivers must use at least two different dry-weather tire compounds during a dry race.</li>
+            <li><strong>Qualifying Sessions:</strong> Qualifying is split into Q1, Q2, and Q3 knockout rounds to determine the starting grid order.</li>
+            <li><strong>Track Limits & Penalties:</strong> Leaving the track to gain a lasting advantage or causing a collision results in time penalties.</li>
+        </ol>
+
+        
+        <h3 id="drivers">Click a Driver to View Their Profile:</h3>
+        <button type="button" onclick="showDriver('hamilton')">Lewis Hamilton</button>
+        <button type="button" onclick="showDriver('antonelli')">Kimi Antonelli</button>
+        <button type="button" onclick="showDriver('verstappen')">Max Verstappen</button>
+        <button type="button" onclick="showDriver('schumacher')">Michael Schumacher</button>
+
+        <p id="driver-box"><strong>Select a driver button above to see their team and career highlights!</strong></p>
+
+        
+        <h3>Stay Updated with Race Weekends</h3>
+
+        
+        <p>
+            Whether you follow qualifying sessions on Saturday or the main Grand Prix on Sunday, 
+            Formula 1 showcases split-second reflexes, teamwork, and precision engineering at over 300 km/h!
+        </p>
+
+        <p>
+            Follow official Grand Prix schedules, standings, and live timing at the 
+            <a href="https://formula1.com" target="_blank">Official Formula 1 Website</a>.
+        </p>
+
+        <hr>
+
+        <footer>
+            <p>Created by: Joshua S. Velazco | BIT 11 | HTML Programming Final Lab Exam 2026</p>
+            <h1>What is this website I made about?</h1>
+            <p>This website I made is a Formula 1 website where F1 fans can access information or maybe new fans can access this site
+                more on about the sport. What it is, the rules, drivers and more. This is just a simple website but overall, this is the whole purpose why
+                I created this website. 
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
